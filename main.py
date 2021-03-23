@@ -3,6 +3,10 @@ import re
 import sys
 import json
 import codecs
+<<<<<<< HEAD
+=======
+import git
+>>>>>>> c43a0a84dfc601221094ca24104e39707615ad85
 import shutil
 import pprint
 from PyQt5.QtGui import QPixmap
@@ -41,7 +45,11 @@ class jspaser:
             filedir = os.path.join(self.config["dccon_list_src"], "dccon_list.js")
 
             with codecs.open(filedir, "w+", encoding="UTF-8-sig") as file:
+<<<<<<< HEAD
                 file.write(" {0} = [\n".format(valname))
+=======
+                file.write("{0} = [\n".format(valname))
+>>>>>>> c43a0a84dfc601221094ca24104e39707615ad85
                 for idx, i in enumerate(data):
                     string = json.dumps(i, ensure_ascii=False)
                     if idx < len(data)-1:
