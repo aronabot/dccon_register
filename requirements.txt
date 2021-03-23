@@ -1,0 +1,9 @@
+PyQt5
+codecs
+git
+json
+os
+pprint
+re
+shutil
+sys
